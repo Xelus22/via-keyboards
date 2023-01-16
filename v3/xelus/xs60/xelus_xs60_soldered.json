@@ -3,6 +3,7 @@
   "vendorId": "0x5845",
   "productId": "0x5860",
   "matrix": {"rows": 5, "cols": 14},
+  "menus": ["qmk_rgblight"],
   "layouts": {
     "labels": [
       "Split Backspace",
