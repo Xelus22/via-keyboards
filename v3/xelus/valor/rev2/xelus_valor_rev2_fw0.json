@@ -2,6 +2,7 @@
   "name": "VALOR REV 2",
   "vendorId": "0x5845",
   "productId": "0x5653",
+  "firwmareVersion": 0,
   "keycodes": ["qmk_lighting"],
   "menus": ["qmk_rgb_matrix"],
   "matrix": {"rows": 5, "cols": 15},

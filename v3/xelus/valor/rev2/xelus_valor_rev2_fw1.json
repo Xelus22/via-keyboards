@@ -1,0 +1,281 @@
+{
+  "name": "VALOR REV 2",
+  "vendorId": "0x5845",
+  "productId": "0x5653",
+  "firwmareVersion": 1,
+  "keycodes": ["qmk_lighting"],
+  "menus": [
+    {
+      "label": "Lighting",
+      "content": [
+        {
+          "label": "Backlight",
+          "content": [
+            {
+              "label": "Brightness",
+              "type": "range",
+              "options": [0, 255],
+              "content": ["id_qmk_rgb_matrix_brightness", 3, 1]
+            },
+            {
+              "label": "Effect",
+              "type": "dropdown",
+              "content": ["id_qmk_rgb_matrix_effect", 3, 2],
+              "options": [
+                "All Off",
+                "Solid Color",
+                "Alphas Mods",
+                "Gradient Up/Down",
+                "Gradient Left/Right",
+                "Breathing",
+                "Band Sat.",
+                "Band Val.",
+                "Pinwheel Sat.",
+                "Pinwheel Val.",
+                "Spiral Sat.",
+                "Spiral Val.",
+                "Cycle All",
+                "Cycle Left/Right",
+                "Cycle Up/Down",
+                "Rainbow Moving Chevron",
+                "Cycle Out/In",
+                "Cycle Out/In Dual",
+                "Cycle Pinwheel",
+                "Cycle Spiral",
+                "Dual Beacon",
+                "Rainbow Beacon",
+                "Rainbow Pinwheels",
+                "Raindrops",
+                "Jellybean Raindrops",
+                "Hue Breathing",
+                "Hue Pendulum",
+                "Hue Wave",
+                "Pixel Rain",
+                "Pixel Flow",
+                "Pixel Fractal",
+                "Typing Heatmap",
+                "Digital Rain",
+                "Solid Reactive Simple",
+                "Solid Reactive",
+                "Solid Reactive Wide",
+                "Solid Reactive Multi Wide",
+                "Solid Reactive Cross",
+                "Solid Reactive Multi Cross",
+                "Solid Reactive Nexus",
+                "Solid Reactive Multi Nexus",
+                "Spash",
+                "Multi Splash",
+                "Solid Splash",
+                "Solid Multi Splash",
+                "RGB_TEST"
+              ]
+            },
+            {
+              "showIf": "{id_qmk_rgb_matrix_effect} != 0",
+              "label": "Effect Speed",
+              "type": "range",
+              "options": [0, 255],
+              "content": ["id_qmk_rgb_matrix_effect_speed", 3, 3]
+            },
+            {
+              "showIf": "{id_qmk_rgb_matrix_effect} != 0 && {id_qmk_rgb_matrix_effect} != 24 && {id_qmk_rgb_matrix_effect} != 28 && {id_qmk_rgb_matrix_effect} != 29 && {id_qmk_rgb_matrix_effect} != 32",
+              "label": "Color",
+              "type": "color",
+              "content": ["id_qmk_rgb_matrix_color", 3, 4]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Indicators",
+      "content": [
+        {
+          "label": "Caps Lock",
+          "content": [
+            {
+              "label": "Brightness",
+              "type": "range",
+              "options": [0, 255],
+              "content": ["id_caps_lock_brightness", 0, 1]
+            },
+            {
+              "label": "Color",
+              "type": "color",
+              "content": ["id_caps_lock_color", 0, 2]
+            },
+            {
+              "label": "LED Number",
+              "type": "range",
+              "options": [0, 27],
+              "content": ["id_caps_lock_key", 0, 3]
+            }
+          ]
+        },
+        {
+          "label": "Num Lock",
+          "content": [
+            {
+              "label": "Brightness",
+              "type": "range",
+              "options": [0, 255],
+              "content": ["id_num_lock_brightness", 0, 4]
+            },
+            {
+              "label": "Color",
+              "type": "color",
+              "content": ["id_num_lock_color", 0, 5]
+            },
+            {
+              "label": "LED Number",
+              "type": "range",
+              "options": [0, 27],
+              "content": ["id_num_lock_key", 0, 6]
+            }
+
+          ]
+        },
+        {
+          "label": "Scroll Lock",
+          "content": [
+            {
+              "label": "Brightness",
+              "type": "range",
+              "options": [0, 255],
+              "content": ["id_scroll_lock_brightness", 0, 7]
+            },
+            {
+              "label": "Color",
+              "type": "color",
+              "content": ["id_scroll_lock_color", 0, 8]
+            },
+            {
+              "label": "LED Number",
+              "type": "range",
+              "options": [0, 27],
+              "content": ["id_scroll_lock_key", 0, 9]
+            }
+          ]
+        },
+        {
+          "label": "Layer Indicator",
+          "content": [
+            {
+              "label": "Brightness",
+              "type": "range",
+              "options": [0, 255],
+              "content": ["id_layer_indicator_brightness", 0, 10]
+            },
+            {
+              "label": "Color",
+              "type": "color",
+              "content": ["id_layer_indicator_color", 0, 11]
+            },
+            {
+              "label": "LED Number",
+              "type": "range",
+              "options": [0, 27],
+              "content": ["id_layer_indicator_key", 0, 12]
+            }
+
+          ]
+        }
+      ]
+    }
+  ],
+  "matrix": {"rows": 5, "cols": 15},
+  "layouts": {
+    "labels": ["Split Backspace", "Split Right Shift"],
+    "keymap": [
+      [
+        {"y": 0.38, "x": 0.5, "c": "#777777"},
+        "0,0",
+        {"x": 2.25, "c": "#cccccc"},
+        "0,3",
+        {"x": 8.75},
+        "0,12"
+      ],
+      [
+        {"y": -0.88, "x": 1.75, "c": "#aaaaaa"},
+        "0,1",
+        {"c": "#cccccc"},
+        "0,2",
+        {"x": 10.75},
+        "0,13",
+        {"c": "#aaaaaa", "w": 2},
+        "0,14\n\n\n0,0",
+        {"x": 1.25},
+        "0,14\n\n\n0,1",
+        "2,14\n\n\n0,1"
+      ],
+      [
+        {"y": -0.12, "x": 0.25, "c": "#777777"},
+        "1,0",
+        {"x": 12, "c": "#cccccc"},
+        "1,11"
+      ],
+      [
+        {"y": -0.88, "x": 1.5, "c": "#aaaaaa", "w": 1.5},
+        "1,1",
+        {"c": "#cccccc"},
+        "1,2",
+        {"x": 10.25},
+        "1,12",
+        "1,13",
+        {"w": 1.5},
+        "1,14"
+      ],
+      [{"y": -0.12, "c": "#777777"}, "2,0"],
+      [
+        {"y": -0.88, "x": 1.25, "c": "#aaaaaa", "w": 1.75},
+        "2,1",
+        {"c": "#cccccc"},
+        "2,2",
+        {"x": 9.75},
+        "2,11",
+        "2,12",
+        {"c": "#777777", "w": 2.25},
+        "2,13"
+      ],
+      [
+        {"x": 1, "c": "#aaaaaa", "w": 2.25},
+        "3,1",
+        {"c": "#cccccc"},
+        "3,2",
+        {"x": 9.25},
+        "3,11",
+        "3,12",
+        {"c": "#aaaaaa", "w": 2.75},
+        "3,13\n\n\n1,0",
+        {"x": 0.5, "w": 1.75},
+        "3,13\n\n\n1,1",
+        "3,14\n\n\n1,1"
+      ],
+      [{"x": 1, "w": 1.5}, "4,1", {"x": 13.5, "w": 1.5}, "4,13"],
+      [
+        {"r": 12, "rx": 4.75, "ry": 1.5, "y": -1, "c": "#cccccc"},
+        "0,4",
+        "0,5",
+        "0,6",
+        "0,7"
+      ],
+      [{"x": -0.5}, "1,3", "1,4", "1,5", "1,6"],
+      [{"x": -0.25}, "2,3", "2,4", "2,5", "2,6"],
+      [{"x": 0.25}, "3,3", "3,4", "3,5", "3,6"],
+      [{"x": 1.5, "w": 2.25}, "4,5", {"c": "#aaaaaa"}, "4,6"],
+      [{"y": -0.88, "w": 1.5}, "4,3"],
+      [
+        {"r": -12, "rx": 14, "ry": 1.25, "y": -1, "x": -4.5, "c": "#cccccc"},
+        "0,8",
+        "0,9",
+        "0,10",
+        "0,11"
+      ],
+      [{"x": -5}, "1,7", "1,8", "1,9", "1,10"],
+      [{"x": -4.75}, "2,7", "2,8", "2,9", "2,10"],
+      [{"x": -5.25}, "3,7", "3,8", "3,9", "3,10"],
+      [{"x": -5.25, "w": 2.75}, "4,8"],
+      [{"y": -0.87, "x": -2.5, "c": "#aaaaaa", "w": 1.5}, "4,10"]
+    ]
+  }
+}
