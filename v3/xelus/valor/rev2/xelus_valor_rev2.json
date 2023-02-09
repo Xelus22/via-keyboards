@@ -2,7 +2,7 @@
   "name": "VALOR REV 2",
   "vendorId": "0x5845",
   "productId": "0x5653",
-  "firwmareVersion": 1,
+  "firmwareVersion": 1,
   "keycodes": ["qmk_lighting"],
   "menus": [
     {
@@ -174,7 +174,7 @@
             {
               "label": "LED Number",
               "type": "range",
-              "options": [0, 27],
+              "options": [0, 28],
               "content": ["id_layer_indicator_key", 0, 12]
             }
 
