@@ -92,29 +92,29 @@
             {
               "label": "Enable",
               "type": "toggle",
-              "content": ["id_caps_lock_enable", 0, 1]
+              "content": ["id_caps_lock_enable", 6, 1]
             },
             {
               "label": "Brightness",
               "type": "range",
               "options": [0, 255],
-              "content": ["id_caps_lock_brightness", 0, 2]
+              "content": ["id_caps_lock_brightness", 6, 2]
             },
             {
               "label": "Color",
               "type": "color",
-              "content": ["id_caps_lock_color", 0, 3]
+              "content": ["id_caps_lock_color", 6, 3]
             },
             {
               "label": "LED Number",
               "type": "range",
               "options": [0, 117],
-              "content": ["id_caps_lock_key", 0, 4]
+              "content": ["id_caps_lock_key", 6, 4]
             },
             {
               "label": "Override animation (off state)",
               "type": "toggle",
-              "content": ["id_caps_lock_override", 0, 5]
+              "content": ["id_caps_lock_override", 6, 5]
             }
           ]
         },
@@ -124,29 +124,29 @@
             {
               "label": "Enable",
               "type": "toggle",
-              "content": ["id_num_lock_enable", 0, 6]
+              "content": ["id_num_lock_enable", 6, 6]
             },
             {
               "label": "Brightness",
               "type": "range",
               "options": [0, 255],
-              "content": ["id_num_lock_brightness", 0, 7]
+              "content": ["id_num_lock_brightness", 6, 7]
             },
             {
               "label": "Color",
               "type": "color",
-              "content": ["id_num_lock_color", 0, 8]
+              "content": ["id_num_lock_color", 6, 8]
             },
             {
               "label": "LED Number",
               "type": "range",
               "options": [0, 117],
-              "content": ["id_num_lock_key", 0, 9]
+              "content": ["id_num_lock_key", 6, 9]
             },
             {
               "label": "Override animation (off state)",
               "type": "toggle",
-              "content": ["id_num_lock_override", 0, 10]
+              "content": ["id_num_lock_override", 6, 10]
             }
           ]
         },
@@ -156,29 +156,29 @@
             {
               "label": "Enable",
               "type": "toggle",
-              "content": ["id_scroll_lock_enable", 0, 11]
+              "content": ["id_scroll_lock_enable", 6, 11]
             },
             {
               "label": "Brightness",
               "type": "range",
               "options": [0, 255],
-              "content": ["id_scroll_lock_brightness", 0, 12]
+              "content": ["id_scroll_lock_brightness", 6, 12]
             },
             {
               "label": "Color",
               "type": "color",
-              "content": ["id_scroll_lock_color", 0, 13]
+              "content": ["id_scroll_lock_color", 6, 13]
             },
             {
               "label": "LED Number",
               "type": "range",
               "options": [0, 117],
-              "content": ["id_scroll_lock_key", 0, 14]
+              "content": ["id_scroll_lock_key", 6, 14]
             },
             {
               "label": "Override animation (off state)",
               "type": "toggle",
-              "content": ["id_scroll_lock_override", 0, 15]
+              "content": ["id_scroll_lock_override", 6, 15]
             }
           ]
         },
@@ -188,29 +188,29 @@
             {
               "label": "Enable",
               "type": "toggle",
-              "content": ["id_layer_indicator_enable", 0, 16]
+              "content": ["id_layer_indicator_enable", 6, 16]
             },
             {
               "label": "Brightness",
               "type": "range",
               "options": [0, 255],
-              "content": ["id_layer_indicator_brightness", 0, 17]
+              "content": ["id_layer_indicator_brightness", 6, 17]
             },
             {
               "label": "Color",
               "type": "color",
-              "content": ["id_layer_indicator_color", 0, 18]
+              "content": ["id_layer_indicator_color", 6, 18]
             },
             {
               "label": "LED Number",
               "type": "range",
               "options": [0, 117],
-              "content": ["id_layer_indicator_key", 0, 19]
+              "content": ["id_layer_indicator_key", 6, 19]
             },
             {
               "label": "Override animation (off state)",
               "type": "toggle",
-              "content": ["id_layer_indicator_override", 0, 20]
+              "content": ["id_layer_indicator_override", 6, 20]
             }
           ]
         }
